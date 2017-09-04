@@ -14,6 +14,6 @@ This repo contains the following Formula:
 
 ## Installation
 
-    $ brew tap kennethreitz/hombrew-pythons
+    $ brew tap kennethreitz/pythons
     $ brew install python-2.5
 
