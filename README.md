@@ -1,4 +1,4 @@
-# The Python Homebrew Tap™
+# 🍺🐍 The Python Homebrew Tap™
 
 This repo contains the following Formula:
 
