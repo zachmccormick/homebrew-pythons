@@ -17,3 +17,4 @@ This repo contains the following Formula:
     $ brew tap kennethreitz/pythons
     $ brew install python-2.5
 
+P.S. Don't do this yet!
