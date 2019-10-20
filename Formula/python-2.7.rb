@@ -76,7 +76,7 @@ class Python27 < Formula
   # setuptools remembers the build flags python is built with and uses them to
   # build packages later. Xcode-only systems need different flags.
   pour_bottle? do
-    reason <<-EOS.undent
+    reason <<~EOS
     The bottle needs the Apple Command Line Tools to be installed.
       You can install them, if desired, with:
         xcode-select --install
@@ -290,7 +290,7 @@ class Python27 < Formula
     end
 
     cfg = lib_cellar/"distutils/distutils.cfg"
-    cfg.atomic_write <<-EOF.undent
+    cfg.atomic_write <<~EOF
       [install]
       prefix=#{HOMEBREW_PREFIX}
       [build_ext]
@@ -300,7 +300,7 @@ class Python27 < Formula
   end
 
   def sitecustomize
-    <<-EOF.undent
+    <<~EOF
       # This file is created by Homebrew and is executed on each python startup.
       # Don't print from here, or else python command line scripts may fail!
       # <https://docs.brew.sh/Homebrew-and-Python.html>
@@ -344,7 +344,7 @@ class Python27 < Formula
     EOF
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     This formula installs a python2 executable to #{HOMEBREW_PREFIX}/bin.
     If you wish to have this formula's python executable in your PATH then add
     the following to #{shell_profile}:
